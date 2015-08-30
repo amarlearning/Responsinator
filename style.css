@@ -1,0 +1,45 @@
+body
+{
+	margin:0px;
+}
+.header
+{
+	width:400px;
+	height:120%;
+	background-color: #ffcc00;
+	
+}
+.style
+{
+	width:150px;
+	height:35px;
+	background-color: #ffc002;
+	color:#ff6347;
+	border: 2px solid #ff6341;
+	padding:6px;
+	font-size: 18px;
+}
+h1
+{
+	color:#fff;
+	font-size: 45px;
+	font-family:cursive,Calibri,Tahoma,'Shift',Sans-serif,Trebuchet MS,Verdana,Arial;
+
+}
+h3
+{
+	color:#fff;
+	font-size: 25px;
+	font-family:cursive,Calibri,Tahoma,'Shift',Sans-serif,Trebuchet MS,Verdana,Arial;
+	margin-left: -20px;
+	padding-top: 5px;
+}
+#name
+{
+	width:300px;
+	height:35px;
+	font-size: 20px;
+	color:#ff6341;
+	outline-color: #ff6347;
+
+}
