@@ -46,8 +46,9 @@ I like designs that are clean/simple but still include a lot of functionality." 
 </div>-->
 <div class="header">
 <div class="left"><br>
-<input type="text" id="name" placeholder="www.amarpandey.ml">&nbsp;&nbsp;&nbsp;<button class="button">GO</button>
-
+<form method="get" action="web.php">
+<input type="text" id="name" placeholder="www.amarpandey.ml" >&nbsp;&nbsp;&nbsp;<input class="button" value="GO" type="submit">
+</form>
 </div>
 <div class="right"><br>
 <button class="button-part" id="small">Small</button>&nbsp;&nbsp;&nbsp;
@@ -61,7 +62,10 @@ I like designs that are clean/simple but still include a lot of functionality." 
 </div>
 </div>
 <div class="iframe">
-<iframe src="http://www.amarpandey.ml"></iframe>
+<?php
+$name = $_POST['see'];
+?>
+<iframe src="<?php echo "http://".$name ?>"></iframe>
 </div>
 </body>
 </html>
