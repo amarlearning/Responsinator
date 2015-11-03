@@ -24,21 +24,90 @@ I like designs that are clean/simple but still include a lot of functionality." 
 <script type="text/javascript" src="bootstrap.min.js"></script>
 <script type="text/javascript" src="script.js"></script>
 <script>
-
+function small() {
+    var a = document.getElementById('name').value;
+    window.open('http://'+a, "_blank","toolbar=yes, location=yes, directories=no, status=no, menubar=yes, scrollbars=yes, resizable=no, copyhistory=yes, width=382.40, height=750");
+}
+function medium() {
+    var a = document.getElementById('name').value;
+    window.open('http://'+a, "_blank","toolbar=yes, location=yes, directories=no, status=no, menubar=yes, scrollbars=yes, resizable=no, copyhistory=yes, width=665.68, height=750");
+}
+function large() {
+    var a = document.getElementById('name').value;
+    window.open('http://'+a, "_blank","toolbar=yes, location=yes, directories=no, status=no, menubar=yes, scrollbars=yes, resizable=no, copyhistory=yes, width=997.18, height=750");
+}
+function full() {
+    var a = document.getElementById('name').value;
+    window.open('http://'+a, "_blank","toolbar=yes, location=yes, directories=no, status=no, menubar=yes, scrollbars=yes, resizable=no, copyhistory=yes, width=1366, height=750");
+}
+function increase() {
+    var a = document.getElementById('name').value;
+    var w= window.open('http://'+a, "_blank","toolbar=yes, location=yes, directories=no, status=no, menubar=yes, scrollbars=yes, resizable=no, copyhistory=yes, width=400, height=750");
+    
+}
+function decrease() {
+    var a = document.getElementById('name').value;
+    var w = window.open('http://'+a, "_blank","toolbar=yes, location=yes, directories=no, status=no, menubar=yes, scrollbars=yes, resizable=no, copyhistory=yes, width=400, height=750");
+     
+}
 
 </script>
 <style type="text/css">
+body
+{
+	margin:0px;
+}
+.header
+{
+	width:400px;
+	height:120%;
+	background-color: #ffcc00;
+	
+}
+.style
+{
+	width:150px;
+	height:35px;
+	background-color: #ffc002;
+	color:#ff6347;
+	border: 2px solid #ff6341;
+	padding:6px;
+	font-size: 18px;
+}
+h1
+{
+	color:#fff;
+	font-size: 45px;
+	font-family:cursive,Calibri,Tahoma,'Shift',Sans-serif,Trebuchet MS,Verdana,Arial;
 
+}
+h3
+{
+	color:#fff;
+	font-size: 25px;
+	font-family:cursive,Calibri,Tahoma,'Shift',Sans-serif,Trebuchet MS,Verdana,Arial;
+	margin-left: -20px;
+	padding-top: 5px;
+}
+#name
+{
+	width:300px;
+	height:35px;
+	font-size: 20px;
+	color:#ff6341;
+	outline-color: #ff6347;
+
+}
 </style>
 </head>
-<body bgcolor="#ff4141">
+<body style="background-color:#ff6347">
 
 <center>
-<h1>Responsinator</h1>
-<center>
+<h1>Responsinator<sup style="font-family:tahoma;font-size:20px"> BETA</sup></h1>
+<center><br>
 <div class="header">
 	<h3>Enter the Url</h3>
-<form>
+<form><br>
 <input type="text" id="name" placeholder="www.amarpandey.ml"><br><br>
 <input class="style" type="button" value="Small" onclick="small()">&nbsp;&nbsp;
 <input class="style" type="button" value="Medium" onclick="medium()"><br><br>
@@ -53,5 +122,3 @@ I like designs that are clean/simple but still include a lot of functionality." 
 </center>
 </body>
 </html>
-
-
