@@ -46,8 +46,14 @@ I like designs that are clean/simple but still include a lot of functionality." 
 </div>-->
 <div class="header">
 <div class="left"><br>
-<form method="post" action="web.php">
-<input type="text" id="name" placeholder="www.amarpandey.ml" name="see">&nbsp;&nbsp;&nbsp;
+<?php
+if($_SERVER["REQUEST_METHOD"] == "POST")
+{
+	$name = $_POST['see'];
+?>
+
+<form method="POST" action="index.php">
+<input type="text" id="name" placeholder="<?php echo $name ?>" name="see">&nbsp;&nbsp;&nbsp;
 <input class="button" value="GO" type="submit">
 </form>
 </div>
@@ -63,7 +69,29 @@ I like designs that are clean/simple but still include a lot of functionality." 
 </div>
 </div>
 <div class="iframe">
+<iframe src="<?php echo "http://".$name ?>"></iframe>
+</div>
+
+<?php } else { ?>
+<form method="post" action="index.php">
+<input type="text" id="name" placeholder="www.amarpandey.ml" name="see">&nbsp;&nbsp;&nbsp;
+<input class="button" value="GO" type="submit">
+</div>
+<div class="right"><br>
+<button class="button-part" id="small">Small</button>&nbsp;&nbsp;&nbsp;
+<button class="button-part" id="medium">Medium</button>&nbsp;&nbsp;&nbsp;
+<button class="button-part" id="large">Large</button>&nbsp;&nbsp;&nbsp;
+<button class="button-part" id="full">Full</button>&nbsp;&nbsp;&nbsp;
+<button class="button-part" id="dance">Dance</button>&nbsp;&nbsp;&nbsp;
+<button class="button-part" id="increase" >Increase</button>&nbsp;&nbsp;&nbsp;
+<button class="button-part" id="decrease">Decrease</button>
+
+</div>
+</div>
+<div class="iframe">
 <iframe src="http://www.amarpandey.ml"></iframe>
 </div>
+
+<?php } ?>
 </body>
 </html>
