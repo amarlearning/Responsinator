@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta name="description" content="Hello, my name is Amar Pandey and I am a computer science engineer.I expect to graduate with a Bachelors degree in May 2017." />
+<meta name="description" content="Hello, My name is Amar Pandey and I am a computer science engineer.I expect to graduate with a Bachelors degree in May 2017." />
 <meta name="keywords" content="Hello, my name is Amar Pandey and I am a computer science engineer.I expect to graduate with a Bachelors degree in May 2017.
 
  I love Web Design/Development.
