@@ -1,4 +1,5 @@
 # Responsinator
-It is a web application by which you can check the responsive ness of your website.
+It is a web application by which you can check the responsiveness of your website.
 
-Want to use it : http://www.amarpandey.ml/project/response
+##ScreenShots
+![Responsinator](https://raw.githubusercontent.com/amarlearning/responsinator/master/img/response.jpg)
