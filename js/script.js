@@ -1,22 +1,3 @@
-/*
-function small() {
-    var a = document.getElementById('name').value;
-    window.open('http://'+a, "_blank","toolbar=yes, location=yes, directories=no, status=no, menubar=yes, scrollbars=yes, resizable=no, copyhistory=yes, width=382.40, height=750");
-}
-function medium() {
-    var a = document.getElementById('name').value;
-    window.open('http://'+a, "_blank","toolbar=yes, location=yes, directories=no, status=no, menubar=yes, scrollbars=yes, resizable=no, copyhistory=yes, width=665.68, height=750");
-}
-function large() {
-    var a = document.getElementById('name').value;
-    window.open('http://'+a, "_blank","toolbar=yes, location=yes, directories=no, status=no, menubar=yes, scrollbars=yes, resizable=no, copyhistory=yes, width=997.18, height=750");
-}
-function full() {
-    var a = document.getElementById('name').value;
-    window.open('http://'+a, "_blank","toolbar=yes, location=yes, directories=no, status=no, menubar=yes, scrollbars=yes, resizable=no, copyhistory=yes, width=, height=750");
-}
-*/
-
 $(document).ready(function(){
     $('#small').click(function(){
 
@@ -41,20 +22,16 @@ $(document).ready(function(){
         $('iframe').css('width','1366')
     });
 });
-
 $(document).ready(function(){
     $('#increase').click(function(){
 
        setTimeout( function(){
         $('iframe').css('width','366'); 
-              },500);  
-
-
+       },500);
        setTimeout( function()
        {
         $('iframe').css('width','416');
             },1000);
-
        setTimeout( function()
        {
         $('iframe').css('width','466');
